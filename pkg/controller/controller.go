@@ -92,25 +92,25 @@ func New(
 func (c *Controller) EnsureCustomResourceDefinitions() error {
 	log.Infoln("Ensuring CustomResourceDefinition...")
 	crds := []*crd_api.CustomResourceDefinition{
+		dbapi.DormantDatabase{}.CustomResourceDefinition(),
 		dbapi.Elasticsearch{}.CustomResourceDefinition(),
 		dbapi.Etcd{}.CustomResourceDefinition(),
-		dbapi.Postgres{}.CustomResourceDefinition(),
-		dbapi.MySQL{}.CustomResourceDefinition(),
-		dbapi.MongoDB{}.CustomResourceDefinition(),
-		dbapi.Redis{}.CustomResourceDefinition(),
 		dbapi.Memcached{}.CustomResourceDefinition(),
+		dbapi.MongoDB{}.CustomResourceDefinition(),
+		dbapi.MySQL{}.CustomResourceDefinition(),
 		dbapi.PgBouncer{}.CustomResourceDefinition(),
-		dbapi.DormantDatabase{}.CustomResourceDefinition(),
+		dbapi.Postgres{}.CustomResourceDefinition(),
+		dbapi.Redis{}.CustomResourceDefinition(),
 		dbapi.Snapshot{}.CustomResourceDefinition(),
 
 		catalogapi.ElasticsearchVersion{}.CustomResourceDefinition(),
 		catalogapi.EtcdVersion{}.CustomResourceDefinition(),
-		catalogapi.PostgresVersion{}.CustomResourceDefinition(),
-		catalogapi.MySQLVersion{}.CustomResourceDefinition(),
-		catalogapi.MongoDBVersion{}.CustomResourceDefinition(),
-		catalogapi.RedisVersion{}.CustomResourceDefinition(),
 		catalogapi.MemcachedVersion{}.CustomResourceDefinition(),
+		catalogapi.MongoDBVersion{}.CustomResourceDefinition(),
+		catalogapi.MySQLVersion{}.CustomResourceDefinition(),
 		catalogapi.PgBouncerVersion{}.CustomResourceDefinition(),
+		catalogapi.PostgresVersion{}.CustomResourceDefinition(),
+		catalogapi.RedisVersion{}.CustomResourceDefinition(),
 
 		appcat.AppBinding{}.CustomResourceDefinition(),
 	}

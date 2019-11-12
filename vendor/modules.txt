@@ -28,9 +28,9 @@ github.com/appscode/go/runtime
 github.com/appscode/go/flags
 github.com/appscode/go/log
 github.com/appscode/go/log/golog
+github.com/appscode/go/encoding/json/types
 github.com/appscode/go/sets
 github.com/appscode/go/context
-github.com/appscode/go/encoding/json/types
 github.com/appscode/go/types
 github.com/appscode/go/crypto/rand
 github.com/appscode/go/ioutil
@@ -468,19 +468,19 @@ k8s.io/apiextensions-apiserver/pkg/apis/apiextensions
 # k8s.io/apimachinery v0.0.0-20190508063446-a3da69d3723c => github.com/kmodules/apimachinery v0.0.0-20190508045248-a52a97a7a2bf
 k8s.io/apimachinery/pkg/util/runtime
 k8s.io/apimachinery/pkg/apis/meta/v1
-k8s.io/apimachinery/pkg/runtime
+k8s.io/apimachinery/pkg/apis/meta/v1/unstructured
 k8s.io/apimachinery/pkg/runtime/schema
+k8s.io/apimachinery/pkg/util/errors
+k8s.io/apimachinery/pkg/runtime
 k8s.io/apimachinery/pkg/runtime/serializer
 k8s.io/apimachinery/pkg/version
 k8s.io/apimachinery/pkg/util/wait
 k8s.io/apimachinery/pkg/api/errors
 k8s.io/apimachinery/pkg/api/meta
-k8s.io/apimachinery/pkg/util/errors
 k8s.io/apimachinery/pkg/util/sets
 k8s.io/apimachinery/pkg/util/validation
 k8s.io/apimachinery/pkg/util/waitgroup
 k8s.io/apimachinery/pkg/api/resource
-k8s.io/apimachinery/pkg/apis/meta/v1/unstructured
 k8s.io/apimachinery/pkg/runtime/serializer/versioning
 k8s.io/apimachinery/pkg/util/mergepatch
 k8s.io/apimachinery/pkg/util/strategicpatch
